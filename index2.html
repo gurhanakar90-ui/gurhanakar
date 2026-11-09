@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gürhan Akar</title>
+<style>
+:root{color-scheme:dark;--bg:#0a1230;--card:#111c45;--line:#22306a;--y:#ffc400;--t:#f4f6ff;--m:#9aa6d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 50% 0,#16245a,var(--bg) 55%);color:var(--t);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh}
+main{max-width:480px;margin:0 auto;padding:40px 20px 48px;text-align:center}
+.av{width:120px;height:120px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;font-size:42px;font-weight:800;color:var(--bg);background:var(--y);box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--y),0 0 40px rgba(255,196,0,.35)}
+h1{margin:0;font-size:28px}
+.sub{margin:6px 0 32px;color:var(--m);font-size:16px}
+h2{text-align:left;color:var(--y);font-size:26px;margin:0 0 16px}
+.btn{display:flex;align-items:center;gap:14px;width:100%;padding:20px 22px;margin-bottom:14px;background:var(--card);border:1px solid var(--line);border-radius:999px;color:var(--t);font:600 15px inherit;letter-spacing:.25em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:.2s}
+.btn:hover{border-color:var(--y);box-shadow:0 0 18px rgba(255,196,0,.25)}
+.btn svg{width:22px;height:22px;stroke:var(--y);fill:none;stroke-width:2;flex:none}
+.btn .chev{margin-left:auto;transition:.2s}
+.open .chev{transform:rotate(180deg)}
+.panel{display:none;margin:-4px 0 14px;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:20px;color:var(--m);font-size:14px;text-align:left}
+.open+.panel{display:block}
+</style>
+</head>
+<body>
+<main>
+  <div class="av">GA</div>
+  <h1>Gürhan Akar</h1>
+  <p class="sub">@_gurhanakar</p>
+  <h2>Yararlı Linkler</h2>
+  <button class="btn" id="pb" type="button" aria-expanded="false">
+    <svg viewBox="0 0 24 24"><path d="M7 11v9H4v-9zM7 11l4-8c2 0 3 1 3 3v3h5a2 2 0 0 1 2 2l-1 7a2 2 0 0 1-2 2H7"/></svg>
+    Prompts
+    <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+  </button>
+  <div class="panel">Promptlar çok yakında burada olacak.</div>
+  <a class="btn" href="https://www.youtube.com/@g%C3%BCrhanAKAR" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>
+    YouTube
+  </a>
+</main>
+<script>
+var b=document.getElementById("pb");
+b.addEventListener("click",function(){var o=b.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+</script>
+</body>
+</html>
